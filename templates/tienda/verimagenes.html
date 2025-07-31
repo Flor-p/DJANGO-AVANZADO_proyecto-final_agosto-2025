@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% load static %}
+{% block tienda %}
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            {% for producto in productos %}
+                <a href="{% url 'ver' producto.id%}">
+                    <img src="{% static 'img/4.jpg' %} {{producto.imagen}}" style="width: 30%;"/>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+  </div>
+{% endblock  %}
+
