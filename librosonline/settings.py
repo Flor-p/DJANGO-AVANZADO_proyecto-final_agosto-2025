@@ -1,4 +1,3 @@
-
 """
 Django settings for librosonline project.
 
@@ -26,9 +25,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-nr#ytv5f)l(gsz_5fdznl3cuxmnc02$vk6l@%8-12xr%_s0&g*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['librosonline', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['flor.pythonanywhere.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
