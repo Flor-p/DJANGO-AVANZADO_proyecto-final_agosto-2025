@@ -99,12 +99,12 @@ WSGI_APPLICATION = 'librosonline.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'flor1',
-        'USER': 'florencia',
-        'PASSWORD': 'bambi2025',
-        'HOST': 'flor.mysql.pythonanywhere-services.com',  # <-- cambia esto por tu host real
+        'NAME': 'flor$default',                              # Exactamente como aparece en PythonAnywhere
+        'USER': 'flor',                                      # También exacto
+        'PASSWORD': 'bambi2025',                             # Asegurate que sea la de MySQL
+        'HOST': 'flor.mysql.pythonanywhere-services.com',    # Como te indica el panel
         'PORT': '3306',
-   }
+    }
 }
 
 # Password validation
