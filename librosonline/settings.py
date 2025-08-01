@@ -1,5 +1,4 @@
 
-
 """
 Django settings for librosonline project.
 
