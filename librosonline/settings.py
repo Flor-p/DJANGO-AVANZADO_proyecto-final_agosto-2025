@@ -96,14 +96,13 @@ WSGI_APPLICATION = 'librosonline.wsgi.application'
 #    }
 #}
 
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'flor1',
         'USER': 'florencia',
         'PASSWORD': 'bambi2025',
-        'HOST': 'localhost',
+        'HOST': 'flor.mysql.pythonanywhere-services.com',  # <-- cambia esto por tu host real
         'PORT': '3306',
    }
 }
