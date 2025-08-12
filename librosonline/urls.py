@@ -21,6 +21,7 @@ from django.urls import path, include
 from django.conf.urls.static import static
 
 urlpatterns = [
+    path('', include('vistaprevia.urls')),  # ← Esta línea es clave para que tu home funcione
     path('vistaprevia/', include('vistaprevia.urls')),
    #path('accounts/', include('registration.backends.default.urls')),
     path('admin/', admin.site.urls),
@@ -29,11 +30,14 @@ urlpatterns = [
     path('tienda/', include('tienda.urls')),
     path('usuario/', include('usuario.urls')),
     path('api/v1.0/', include('librosrestapi.urls')),  
-]  +static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]  
+
++static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
 #if settings.DEBUG:
 #    import debug_toolbar
 #    
 #    urlpatterns += [path('__debug__/', include(debug_toolbar.urls))]
+
 

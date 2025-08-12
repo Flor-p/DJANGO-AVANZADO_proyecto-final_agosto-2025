@@ -1,5 +1,3 @@
-
-
 """
 Django settings for librosonline project.
 
@@ -27,16 +25,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-nr#ytv5f)l(gsz_5fdznl3cuxmnc02$vk6l@%8-12xr%_s0&g*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['librosonline', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['flor.pythonanywhere.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
 
 INSTALLED_APPS = [
     'django.contrib.sites',
-    'registration', #should be immediately above 'django.contrib.admin'
+#   'registration', #should be immediately above 'django.contrib.admin'
     #apps por defecto
     'django.contrib.admin',
     'django.contrib.auth',
@@ -98,16 +96,15 @@ WSGI_APPLICATION = 'librosonline.wsgi.application'
 #    }
 #}
 
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'flor1',
-        'USER': 'florencia',
-        'PASSWORD': 'bambi2025',
-        'HOST': 'localhost',
+        'NAME': 'flor$default',                              # Exactamente como aparece en PythonAnywhere
+        'USER': 'flor',                                      # También exacto
+        'PASSWORD': 'bambi2025',                             # Asegurate que sea la de MySQL
+        'HOST': 'flor.mysql.pythonanywhere-services.com',    # Como te indica el panel
         'PORT': '3306',
-   }
+    }
 }
 
 # Password validation
